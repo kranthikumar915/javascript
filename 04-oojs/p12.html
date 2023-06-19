@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inheritance</title>
+</head>
+<body>
+    <center>
+        <h1>object basec inheritance (inheritance chain)</h1>
+    </center>
+    <hr>
+    <script>
+        let c1 = {
+            "c1Title" : "html",
+            "c1Fee": 1000
+        };
+        let c2 = Object.create(c1,{
+            "c2Title":{value:"css"},
+            "c2Fee":{value:2000}
+        });
+
+        let c3 =Object.create(c2,{
+            "c3Title":{value:"js"},
+            "c3Fee":{value:6000}
+        });
+
+        let kranthi = Object.create(c3,{name:{value:"subbu"}});
+
+        console.log(kranthi.name);
+        console.log(kranthi.c3Title);
+        console.log(kranthi.c3Fee);
+        console.log(kranthi.c2Title);
+        console.log(kranthi.c2Fee);
+        console.log(kranthi.c1Title);
+        console.log(kranthi.c1Fee);
+
+    </script>
+</body>
+</html>

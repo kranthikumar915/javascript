@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>map ()  constructor</h3>
+
+    <p> a map is a constructor ( basic mapping of key and value)</p>
+    <p> maps are different than an objects in that  their keys can be anything (primitive as well as objects) not just strings and symbols</p>
+    <script>
+        var x = new Map(); //instance
+
+        /* instance.set('key','value');
+           instance.get('key'); */
+           x.set('id',123);
+           x.set('title','javascript');
+           x.set('duration','1month');
+           x.set('isEnable',true);
+
+           console.log(x); //structure of output will be associative set {key => value}
+
+           console.log('id =',x.get('id'));
+           console.log('title =',x.get('title'));
+           console.log('duration =',x.get('duration'));
+
+           document.write(`<h1> ${'id'}</h1>`);
+           document.write(`<h1> ${'title'}</h1>`);
+           document.write(`<h1> ${'duration'}</h1>`);
+           
+    </script>
+</body>
+</html>

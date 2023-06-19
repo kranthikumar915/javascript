@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Constructor methods(ES-5)</h1>
+    <script>
+        //constructor follows func and obj
+        //name of constructor first letter start with uppercase
+        //constructor properties create using 'this'
+        //create an instance to constructor using 'new'
+        //constructor cant return
+        function user(){
+            this.namr="krishna";
+            this.email="krishna@gmail.com";
+            this.age=22;
+            let a=12;
+        };
+        //instance->its a variable we provide permission to access properties of constructor
+        let x=new user();
+        console.log('construtor instance=',x);
+        document.write(`<h1>name=${x.name}</h1>`);
+        document.write(`<h1>email=${x.email}</h1>`);
+        document.write(`<h1>age=${x.age}</h1>`);
+    </script>
+</body>
+</html>

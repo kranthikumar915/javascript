@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string</title>
+</head>
+<body>
+    <center>
+        <h1>string literal</h1>
+    </center>
+    <script>
+        let str = "this is my string...!";
+        document.write(typeof(str) + "<br>");
+        document.write(str + "<br>");
+    </script>
+    <center>
+        <h1>string new instance</h1>
+    </center>
+
+    <script>
+        let dd= new String;
+        dd = "1111111111";
+        document.write(dd + "<br>");
+        document.write(typeof(dd) + "<br>");
+    </script>
+
+    <hr>
+    <center>
+        <h1>
+            by using string object constructor (using new keyword)
+        </h1>
+    </center>
+
+    <script>
+        let str1 = new String("kranthi kumar");
+        document.write(str1 + "<br>");
+
+        for(i=0; i<str1.length; i++){
+            document.write(str1[i] + "<br>")
+        }
+        document.write(typeof(str1));
+    </script>
+
+  <script>
+      document.write("<hr>");
+      document.write("string methods...!");
+      document.write("<hr>");
+
+      document.writeln("string charAt() method...!");
+      var a1 = "javascript"
+      document.write(a1.charAt(7));
+
+      document.write("<hr>");
+      document.write("<h3>string concat() method...!</h3>");
+      var a2 = "example"
+      var g5 = "kranthi"
+      var d4 = a2.concat(g5)
+       document.write(d4 +"<br>");
+
+       var d4 = g5 + a2;
+       document.write(d4+"<br>");
+
+       document.write("<hr>");
+      document.write("<h3>string lastIndaexOf() method...!</h3>");
+      var g5 = "kranthi"
+      var kk = g5.lastIndexOf("i");
+      document.write(kk+"<br>");
+
+      
+      document.write("<hr>");
+      document.write("<h3>string to lowerCase() method...!</h3>");
+      var li = "KRANTHI KUMAR";
+      var il = li.toLowerCase();
+      document.write(il + "<br>")
+
+      document.write("<hr>");
+      document.write("<h3>string toUpperCase() method...!</h3>");
+      var li = "kranthi kumar";
+      var il = li.toUpperCase();
+      document.write(il + "<br>")
+
+      document.write("<hr>");
+      document.write("<h3>string trim() method...!</h3>");
+      var s22 = "         kranthi      kumar";
+      var s44 = s22.trim();
+      document.write(s44 + "<br>");
+
+
+
+
+
+  </script>
+</body>
+</html>

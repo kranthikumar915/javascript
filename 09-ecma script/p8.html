@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>reset operator(parameter to array )</h3>
+
+    <script>
+        /* 11,22 ,33,55,76,87,98,864 =  sum */
+        // accepts parametr return as an array => rest operator)(...)
+        let sum = 0;
+        function sumofdigits(...num){
+            console.log('num = ',num); //array
+
+            num.forEach(item => {
+                sum  += item;
+            })
+            document.write(`<h3> sum of (32,65,765,98,45,65,43,54) =${sum} </h3>`);
+        }
+        sumofdigits(32,64,765,45,65,43,54);
+    </script>
+</body>
+</html>

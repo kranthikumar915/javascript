@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oojs</title>
+</head>
+<body>
+    <center>
+        <h1>by using an object contsructor (using  new keyword)</h1>
+    </center>
+    <br><hr><br>
+
+    <script>
+        let fName,lName;
+
+        function studentInfo(firstName,lastName){
+            document.write(`first parameter value is:${firstName}`);
+            document.write(`second parameter value is:${lastName}`);
+
+            let fn,ln;
+            fn = firstName;
+            ln = lastName;
+
+            document.write(`<h3>first variable value is : ${fn}</h3>`);
+            document.write(`<h3>second variable value is : ${ln}</h3>`);
+
+            let fName,lName;
+
+            this.fName= firstName;
+            this.lName= lastName;
+
+            document.write(`<h3>first variable value is : ${fName}</h3>`);
+            document.write(`<h3>second variable value is : ${lName}</h3>`);
+
+        }
+        let stud= studentInfo('kranthi', 'subbu');
+        console.log("stud", typeof stud);
+        console.log("stud",stud);
+
+        document.write(`<h3>first variable value is : ${stud.fName}</h3>`);
+        document.write(`<h3>second variable value is : ${ stud.lName}</h3>`);
+
+
+
+    </script>
+</body>
+</html>

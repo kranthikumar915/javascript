@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>object.assign</h3><!--used to merge two common properties-->
+    <script>
+        let user1 = {
+
+            name:"kranthi",
+            email:"rcbkranthi kumar@gmail.com",
+            mobile:9162637738
+        }
+
+        let user2 = {
+            name:"kumar",
+            email:"kumar@gmmail.com",
+            mobile:67868768760987
+        }
+
+        console.log("user 1 =", user1)
+        console.log("user 2 =", user2)
+
+         var result = Object.assign(user1,user2);//if any common property exista it holds the last value
+        console.log("result =",result);
+
+    </script>
+</body>
+</html>

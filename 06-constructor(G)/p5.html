@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>Math (Static methods)</h3>
+        <script>
+            document.write(`<h3> abs (-12) = ${ math.abs(-12) } </h3>`);
+            document.write(`<h3> sqrt (25) = ${ math.sqrt(25) } </h3>`);
+            document.write(`<h3> cbrt (27) = ${ math.cbrt(27) } </h3>`);
+            document.write(`<h3> min (27,123,34,3) = ${ math.min(27,123,34,3) } </h3>`);
+            document.write(`<h3> max (27,123,34,3) = ${ math.max(27,123,34,3) } </h3>`);
+
+            document.write(`<h3> floor(2.9) = ${ math.floor(2.9) } </h3>`); /*lowest int*/
+            document.write(`<h3> ceil(2.2) = ${ math.ceil(2.2) } </h3>`); /*highest int*/
+
+            document.write(`<h3> round(2.2) = ${ math.round(2.2) } </h3>`); /* > 0.5 = lowest*/
+            document.write(`<h3> round(2.6) = ${ math.round(2.5) } </h3>`); /* < 0.5 = highest*/
+
+            document.write(`<h3> acos(adj/hyp) = ${math.acos(8/10)} </h3>`);
+            document.write(`<h3> acos(adj/hyp) = ${math.acos(-1)} </h3>`);
+            document.write(`<h3> acos(adj/hyp) = ${math.acos(0)} </h3>`);
+
+            document.write(`<h3> acosh(x) = ${ math.acosh(2) } </h3>`);
+            document.write(`<h3> trunc(x) = ${ math.trunc(12.33) } </h3>`);
+            document.write(`<h3> trunc(x) = ${ math.trunc(0.33) } </h3>`);
+            document.write(`<h3> fround(x) = ${ math.fround(5.389699899) } </h3>`);
+
+            /*
+              math.acosh(2)
+              math.asinh(x)
+              math.atan(x)
+              math.atanh(x)
+              math.atan2(y,x)
+              math.cos(x)
+              math.cosh(x)
+              math.exp(x) E^x Euler's const (2.718)
+              math.fround(x); // float round
+              math.log(x)
+              math.log1p(x)
+              math.log10(x)
+              math.log2(x)
+              math.pow(x,y)x^y
+              math.sign(x)
+              math.sin(x)
+              math.sinh(x)
+              math.tan(x)
+              math.tanh(x)
+              math.trunch(x) -> integer portion of x (remove fractional digits)
+          */
+
+        </script>
+    </body>
+</html>

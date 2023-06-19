@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Object Constructor or Construtor properties</h3>
+
+    <script>
+        // objects Constructor
+        // Object.create -> copy or clone one object prototype in another object
+
+        const user = {
+            name : "Raj",
+            email: "subbubattala01@gmail.com",
+            mobile : 6309309253,
+            age : 25
+        };
+
+        console.log('user =',user);
+        document.write('user =' + user); // [object object]
+        document.write('user name =' + user.name);
+
+        const user1 = Object.create(user);
+
+        console.log('user1 =', user1);
+    </script>
+
+    <!-- <script>
+        let balu = {
+            name : "Raj",
+            email: "subbubattala01@gmail.com",
+            mobile : 6309309253,
+            age : 25
+        }
+
+        document.write(`<h3> hello boys ${balu.email} </h3>`);
+
+        console.log(balu);
+    </script> -->
+
+</body>
+</html>

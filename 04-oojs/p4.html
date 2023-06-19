@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ARRAY</title>
+
+</head>
+
+<body>
+
+    <center>
+
+        <h1>By Array Literal</h1>
+
+    </center>
+
+    <hr>
+
+ 
+
+    <script>
+
+        let fruits = ["Apple","Banana","Mango","Orange","Papaya",1000];
+
+        document.write(typeof(fruits)+"<br>");
+
+        document.write(fruits  + "<br>");
+
+ 
+
+        document.write("<hr>");
+
+        document.write(fruits.length + "<br>");
+
+        document.write(fruits[0] + "<br>");
+
+        document.write(fruits[1] + "<br>");
+
+        document.write("<hr>");
+
+ 
+
+        for(let index = 0; index < fruits.length; index++){
+
+            document.write(fruits[index] + "<br>");
+
+        }
+
+    </script>
+
+ 
+
+    <hr>
+
+    <center>
+
+        <h1>By creating instance of Array object directly( using new keyword)</h1>
+
+    </center>
+
+ 
+
+    <script>
+
+        let empName = new Array();
+
+        console.log(typeof(empName) + " " +"empName");
+
+ 
+
+        empName[0] = "Nandan";
+
+        empName[1] = "Arun";
+
+        empName[2] = "Yashwanth";
+
+        empName[3] = "Amir";
+
+        empName[4] = "Nanjundeshwar";
+
+        empName[5] = "Anjaneya";
+
+        empName[6] = "Pavithra";
+
+        empName[7] = "Asha";
+
+ 
+
+        for(let index = 0; index < empName.length;index++){
+
+            document.write(empName[index] + "<br>");
+
+        }
+
+    </script>
+
+    <hr>
+
+ 
+
+    <center>
+
+        <h1>By using an Array object constructor(using new keyword)</h1>
+
+    </center>
+
+    <hr>
+
+ 
+
+    <script>
+
+        let studentInfo = new Array("AK","PK","KHAKE","SOKE");
+
+ 
+
+        for(let index = 0; index <studentInfo.length; index++){
+
+            document.write(studentInfo[index] + "<br>");
+
+        }
+
+    </script>
+
+ 
+
+    <script>
+
+        document.write("<hr>");
+
+        document.write("<h1>Array Methods..!</h1>");
+
+        document.write("<hr>");
+
+ 
+
+        document.write("<h3> Adding New Elements To an Array</h3>");
+
+        let colors = ["Red","Green","Blue"];
+
+        document.write(colors + "<br>");
+
+ 
+
+        document.write("<h4>Adding New Elements At the END</h4>");
+
+        colors.push("Yellow","Grey");
+
+        document.write(colors + "<br>");
+
+        document.write(colors.length + "<br>");
+
+ 
+
+        document.write("<h4>Adding New Elements At the FIRST</h4>");
+
+        colors.unshift("Black");
+
+        document.write(colors + "<br>");
+
+        document.write(colors.length + "<br>");
+
+        document.write("<hr>");
+
+ 
+
+        document.write("<h3>Removing Elements From An Array</h3>");
+
+        let last = colors.pop();
+
+        colors.unshift("Black");
+
+        document.write(last + "<br>");
+
+        document.write(colors.length + "<br>");
+
+        document.write("<hr>");
+
+ 
+
+        let first = colors.shift();
+
+        document.write(first + "<br>");
+
+        document.write(colors.length + "<br>");
+
+        document.write("<hr>");
+
+ 
+
+        document.write("<h3>Creating a string from an Array</h3>");
+
+        document.write(colors.join("-") + "<br>");
+
+        document.write(colors.join(",") + "<br>");
+
+ 
+
+        document.write("<hr>");
+
+        document.write("<h3>Merging Two Or More Arrays</h3>");
+
+ 
+
+        let pets = ["cat", "Dog","Parrot"];
+
+        let wilds = ["Tiger","wolf","zebra"];
+
+        let bugs = ["Ant","bee"];
+
+        let animals = pets.concat(wilds,bugs);
+
+        document.write(animals + "<br>");
+
+        document.write(typeof(animals) + "<br>");
+
+ 
+
+        document.write("<hr>");
+
+        document.write("<h3>Searching Through An Array</h3>");
+
+ 
+
+        var Tamilfruits = ["Apple","Banana","Mango","Orange","Papaya"];
+
+        document.write(Tamilfruits.indexOf("Apple") + "<br>"); //prints:0
+
+        document.write(Tamilfruits.indexOf("Orange") + "<br>"); //prints:3
+
+        document.write(Tamilfruits.indexOf("Pineapple") + "<br>"); //prints:-1 means not in an array
+
+       
+
+        let p = ["pooja" ,"karo" ,"pooja","khush ho jaye"]
+
+        document.write(p.lastIndexOf("pooja"));
+
+
+
+
+    </script>
+
+</body>
+
+</html>

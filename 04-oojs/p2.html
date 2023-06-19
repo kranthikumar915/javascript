@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <center>
+        <h1>by creating instance of object directly (using  new keyword)</h1>
+    </center>
+    <hr>
+
+    <strong>syntax:</strong>
+    <pre>
+        lets objectName= new constructorMethod();
+    </pre>
+
+    <script>
+        document.write();
+        document.writeln();
+        document.getElementById();
+        console.log();
+    </script>
+
+    <script>
+        let empDetails = new Object();
+        document.write(typeof empDetails);
+        empDetails.firstName ="be-practical";
+        empDetails.lastName ="Tech-solutions";
+        empDetails.fullName = function(){return this.firstName + " " +this.lastName}
+
+        document.write(empDetails.firstName+"<br>");
+        document.write(empDetails.lastName+"<br>");
+        document.write(empDetails.fullName()+"<br>");
+    </script>
+</body>
+</html>

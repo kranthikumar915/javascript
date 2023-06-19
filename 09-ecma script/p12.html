@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //ecma script & class -> group of objects (state[var] & behaviours[methods/functions])
+        class User{
+            constructor() {
+                this.name = 'raju';//state
+            }
+            //methods
+            print(){
+                document.write(`<h2> hi ${this.name}, welcome to javascript </h1>`); 
+            }
+            sayHi() {
+                document.write(`<h1> say hi to ${this.name}</h1>`);
+            }
+        }
+        //print(); // direct call not posiible for methods or class creating instances
+
+        let x = new User(); // creating insstance /  ref to class
+        x.print();
+        x.sayHi();
+        document.write(`<h1> name is = ${x.name}</h1>`);
+    </script>
+</body>
+</html>

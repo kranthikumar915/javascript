@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS EVENT</title>
+</head>
+<body>
+    <center>
+        <h1>ONSELECT,ONCOPY,ONCUT,ONPASTE</h1>
+    </center>
+    <hr>
+   <form action="">
+    <label for="">enter some content</label>
+    <input type="text" name="text" id="first" onselect="sel()" oncopy="cop()" >
+    <hr><br>
+    <textarea name="" id="" cols="30" rows="20" onpaste="pas()" oncut="cut()"></textarea>
+   </form>
+   <script>
+     function sel(){
+        alert("content has selected");
+     }
+     function cop(){
+     alert("content has copied");
+   }
+   function pas(){
+      alert("content has pasted");
+   }
+   function cut(){
+      alert("coontent has cuted");
+   }
+   </script>
+</body>
+</html>

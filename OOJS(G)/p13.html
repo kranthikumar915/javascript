@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>getter and setters</h1>
+    <script>
+        class Card {
+            constructor(){
+                this.number = " "; 
+            }
+            set  cardNum(val){
+                this.number = val;
+            }
+            get cardNum(){
+                return this.number;
+            }
+        }
+        let x = new Card();
+        console.log('x=',x);
+        x.cardNum = '0077 7886 9690';
+        document.write(`<h1> my card number is ${x.cardNum}</h1>`);
+    </script>
+</body>
+</html>

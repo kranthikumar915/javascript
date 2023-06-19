@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //javascript v8 compiler => browser ES-5
+        // constructor function
+        function User(){
+            this.name = 'kranthi';
+            this.print = function () {
+                document.write(`<h2> hi ${this.name}, welcome to javascripot <h2>`);
+            },
+                this.sayHi = function () {
+                document.write(`<h2> hi ${this.name}, welcome to javascripot <h2>`);
+            }
+        };
+        //instance to constructor
+        let y = new User();
+        y.print();
+        y.sayHi();
+    </script>
+</body>
+</html>

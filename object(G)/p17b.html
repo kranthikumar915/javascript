@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Entries to obj conversion</h3>
+    <script>
+        const userEntry=new Map([
+            ['name','john'],
+            ['email','john@gmail.com'],
+            ['age',33]
+        ]);
+        console.log('entries=',userEntry);
+
+        //conver entries into obj
+        const userObject=Object.fromEntries(userEntry);
+        console.log('Object user=',userObject);
+    </script>
+</body>
+</html>

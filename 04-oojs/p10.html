@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prototype</title>
+</head>
+<body>
+    
+    <center>
+        <h1>PROTOTYPE</h1>
+    </center>
+    <hr>
+
+    <script>
+        function Student() {
+            let name,gender;
+
+            this.name="om namaha shivaya";
+            this.gender="kranthi";
+        }
+
+        let stud= new Student();
+        document.write("<b>student.prototype : </b>" +Student.prototype+ "<br><br>");//object
+        document.write("<b>stud.prototype : </b>" +stud.prototype+ "<br><br>");//undefined
+
+        document.write("<b>stud.__proto__ : </b>" +stud.__proto__ + "<br><br>");//object
+
+        document.write("<b> type of Student.prototype : </b>" +typeof Student.prototype+ "<br><br>");
+
+        document.write("<b> type of stud.__proto__ : </b>" + typeof stud.__proto__ + "<br><br>");
+
+        document.write("<b>object.keys:"+Object.keys(stud)+ "<br><br>")//retrive all the names fo the specific object
+    </script>
+</body>
+</html>

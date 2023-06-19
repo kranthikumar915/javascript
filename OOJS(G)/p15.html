@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>dynamic method name inside the class</h1>
+    <script>
+        let META = Symbol('metadata'); //dynamic property name
+
+        class Car {
+            constructor(br,mod){
+                this.brand = br;
+                this.model = mod;
+            }
+            //[dynamic method name()]{}
+            [META](){
+                //dynamic function
+                return{
+                    brand: this.brand,
+                    model:this.model
+                }
+            }
+        }
+        let x = new Car('mahindra',2023);
+
+        console.log('dyanmic method = ',META);
+
+        console.log('result = ',x[META]()); //ref[dynamic method name]()
+
+        const res = x[META]();
+    </script>
+</body>
+</html>

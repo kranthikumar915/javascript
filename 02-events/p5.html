@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS EVENET</title>
+    <style>
+        div{
+            background-color: aqua;
+            color: blue;
+            padding: 12px;
+            width: 50%;
+            height: 500px;
+            overflow: auto;
+        }
+        h4{
+            padding: 10px;
+            background-color: crimson;
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>onmousewheel</h3>
+
+    <h4 id="output"></h4>
+
+    <div id="text" onmousewheel="wheelHandler()" onmousescroll="wheelHandler()">
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam inventore autem, sunt voluptates quia eius provident reiciendis, tenetur nostrum repellendus enim sint laudantium alias fuga magnam perspiciatis, vero aspernatur hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis saepe omnis incidunt voluptas culpa perspiciatis veritatis vitae distinctio ab! Quo deleniti est sint placeat nobis voluptates eum aperiam, eos laboriosam.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam inventore autem, sunt voluptates quia eius provident reiciendis, tenetur nostrum repellendus enim sint laudantium alias fuga magnam perspiciatis, vero aspernatur hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis saepe omnis incidunt voluptas culpa perspiciatis veritatis vitae distinctio ab! Quo deleniti est sint placeat nobis voluptates eum aperiam, eos laboriosam.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam inventore autem, sunt voluptates quia eius provident reiciendis, tenetur nostrum repellendus enim sint laudantium alias fuga magnam perspiciatis, vero aspernatur hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis saepe omnis incidunt voluptas culpa perspiciatis veritatis vitae distinctio ab! Quo deleniti est sint placeat nobis voluptates eum aperiam, eos laboriosam.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam inventore autem, sunt voluptates quia eius provident reiciendis, tenetur nostrum repellendus enim sint laudantium alias fuga magnam perspiciatis, vero aspernatur hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis saepe omnis incidunt voluptas culpa perspiciatis veritatis vitae distinctio ab! Quo deleniti est sint placeat nobis voluptates eum aperiam, eos laboriosam.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam inventore autem, sunt voluptates quia eius provident reiciendis, tenetur nostrum repellendus enim sint laudantium alias fuga magnam perspiciatis, vero aspernatur hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis saepe omnis incidunt voluptas culpa perspiciatis veritatis vitae distinctio ab! Quo deleniti est sint placeat nobis voluptates eum aperiam, eos laboriosam.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam inventore autem, sunt voluptates quia eius provident reiciendis, tenetur nostrum repellendus enim sint laudantium alias fuga magnam perspiciatis, vero aspernatur hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis saepe omnis incidunt voluptas culpa perspiciatis veritatis vitae distinctio ab! Quo deleniti est sint placeat nobis voluptates eum aperiam, eos laboriosam.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam inventore autem, sunt voluptates quia eius provident reiciendis, tenetur nostrum repellendus enim sint laudantium alias fuga magnam perspiciatis, vero aspernatur hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis saepe omnis incidunt voluptas culpa perspiciatis veritatis vitae distinctio ab! Quo deleniti est sint placeat nobis voluptates eum aperiam, eos laboriosam.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam inventore autem, sunt voluptates quia eius provident reiciendis, tenetur nostrum repellendus enim sint laudantium alias fuga magnam perspiciatis, vero aspernatur hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis saepe omnis incidunt voluptas culpa perspiciatis veritatis vitae distinctio ab! Quo deleniti est sint placeat nobis voluptates eum aperiam, eos laboriosam.</p>
+    </div>
+    <script>
+        function wheelHandler(){
+            document.getElementById("output").innerHTML = document.getElementById("text").scrollTop + "px";
+        }
+    </script>
+</body>
+</html>

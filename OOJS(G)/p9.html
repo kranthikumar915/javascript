@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>super key</h2>
+    <script>
+        //super class
+        class Materials{
+            constructor(x,y){
+            this.brick = x;
+            this.cement = y;
+          }
+          getMaterialInfo(){
+            document.write(`<h1> material info bricks = ${this.brick}, and cement = ${this.cement}</h1>`);
+          }
+        }
+        //base class
+        class Building extends Materials {
+            constructor(a,b,c){
+                super(a,b); //a=x. b=y
+                this.sand = c; //own properties of base class
+            }
+            getMaterialInfo(){
+                document.write(`<h2>${super.getMaterialInfo()}</h1>`);
+                    return `this sand info  = ${this.sand} loads`;
+            }
+        }
+        let p = new Building(7658,87,9);
+       document.write(`<h1>${p.getMaterialInfo()}</h1>`)
+
+    </script>
+</body>
+</html>

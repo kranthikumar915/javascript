@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object methods</title>
+</head>
+<body>
+    <center>
+        <h1>object methods</h1>
+    </center>
+    <hr>
+
+    <p><b>object => object constructor</b></p>
+    <p>1. Object.create() -> clone /copy prototype of one object into const / variable</p>
+    <p>2.Object.getPrototype() -> compare the prototypr of initial with created object</p>
+    <p>3.Object.setPrototype() -> modify or set new prototype to the created object</p>
+
+    <hr>
+    <script>
+        /* declared object*/
+        let user = {
+            name : "bhavana",
+            email : "bhavana@gmail.com"
+        }
+        console.log('user =',user)
+
+        /* cloned/copied object*/
+
+        let user1 = Object.create(user); //copy of prototype of object user (external propetis are inserting into user1)into user1 
+
+        console.log(typeof user1);
+        console.log('user1=', user1);
+
+        document.write(`<p>before set = ${Object.getPrototypeOf(user1)== user}</p>`);//true
+
+        let user2 ={
+            "age" : 34,
+            "height" : "5.2ft"
+        };
+
+        Object.setPrototypeOf(user1,user2); //used to modify the copied /cloned object prototype
+
+        console.log("user1 :",user1);
+        console.log("user2 :",user2);
+
+        document.write(`<p>after set = ${Object.getPrototypeOf(user1)==user}</p>`)//false
+
+    </script>
+</body>
+</html>

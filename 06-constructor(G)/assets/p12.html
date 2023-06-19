@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>custom contsructor</h3>
+    <script>
+        function Kranthi() {
+
+            this.height = 6;
+            this.weight = 71;
+            this.email = "rcbkranthikumar@gmail.com"
+            this.place = "andhra"
+            this.display = function(){
+                  document.write(`<h3>display function</h3>`);
+            }
+        }
+        var a = new Kranthi();
+
+        console.log(a);
+           document.write(`<h3> ${a.height}</h3>`); //instance.key
+           document.write(`<h3> ${a["weight"]}</h3>`); // instance['key']
+           document.write(`<h3> ${a.email}</h3>`); 
+           document.write(`<h3> ${a.place}</h3>`); 
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <h1>javascript</h1>
+    <pre>
+        1. my object literal
+        2. by creating instance of object directly (using new keyword)
+        3. by using an object constructor (using new keyword)
+    </pre>
+
+    <h2>by object literal</h2>
+    <p><strong>syntax:</strong></p>
+
+    <pre>
+        let literalObjectName = {
+            "property1":"value1",
+            "property2":"value2",
+            "property3":"value3",
+            "propertyN":"valueN",
+        };
+        console.log(literalObjectName);
+        console.log(typeof(literalObjectName));
+        console.log(literalObjectName.property1);
+    </pre>
+    <br><hr><br>
+    <script> 
+        let firstName ={};
+            document.write(firstName, "<br>");
+            document.write(typeof(firstName),"<br>");
+            document.write(typeof firstName,"<br>" );
+    </script>
+    <script>
+        let empDetails = {
+            "id": 1,
+            "firstName":"kranthi",
+            "lastName":"kumar",
+            "fullName": function(){
+                return this.firstName + "" +this.lastName;
+            },
+            "mobile":[9182137015, 9182137015],
+            "pincode":560064,
+            "address":{"local":"andhra", "per": "telangana"},
+            "photo":"assets/images"
+        }
+        console.log(empDetails);
+        console.log(typeof(empDetails));
+        console.log(empDetails.firstName);
+        console.log(empDetails.lastName);
+        console.log(empDetails.fullName());
+        console.log(empDetails.mobile);
+        console.log(empDetails.mobile[0]);
+        console.log(empDetails.mobile[1]);
+        console.log(empDetails.pincode);
+        console.log(empDetails.address);
+        console.log(empDetails.address.local);
+        console.log(empDetails.address.per);
+        console.log(empDetails.photo);
+    </script>
+
+    <script>
+        document.write("<table border=''1 cellpadding ='10'>");
+            document.write("<tr>");
+                document.write("<th>emp id</th>");
+                document.write("<th>first name</th>");
+                document.write("<th>last name</th>");
+                document.write("<th>full name</th>");
+                document.write("<th>mobile number</th>");
+                document.write("<th>alt mobile number</th>");
+                document.write("<th>local address</th>");
+                document.write("<th>per address</th>");
+                document.write("<th>pincode</th>");
+                document.write("<th>emp photo</th>");
+                document.write("<th>options</th>");
+            document.write("</tr>");
+            document.write("<tr>");
+                document.write("<td>"+empDetails.id+"</td>");
+                document.write("<td>"+ empDetails.firstName +"</td>");
+                document.write("<td>"+ empDetails.lastName +"</td>");
+                document.write("<td>"+empDetails.fullName() +"</td>");
+                document.write("<td>"+ empDetails.mobile +"</td>");
+                document.write("<td>"+ empDetails.mobile[0] +"</td>");
+                document.write("<td>"+ empDetails.address.local +"</td>");
+                document.write("<td>"+ empDetails.address.per +"</td>");
+                document.write("<td>"+ empDetails.pincode +"</td>");
+                document.write("<td>"+ "<img height='100' width='100' src="+empDetails+"</td>")
+                document.write("<td><button type='button'>edit</button></td> | <td><button type='button'>delete</button></td>")
+            document.write("</tr>");
+        document.write("</table>");
+             
+    </script>
+</body>
+</html>

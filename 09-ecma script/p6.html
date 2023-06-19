@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>default parameters in function (to avoid NaN(not a number))</h3>
+
+    <script>
+        function sum(a,b=8){
+            document.write(`<h3> sum = ${a + b}</h3>`);
+        }
+
+        sum(12,79);// 91
+        sum(76);//not a number (NaN)
+    </script>
+    <script>
+        function mul(a,b=2,c=8){
+            document.wrrite(`<h3> product = ${a*b*c}</h3>`)
+        }
+        mul(10,15,8);
+        mul(10,7);
+        mul(6);
+    </script>
+
+</body>
+</html>

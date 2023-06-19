@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object inheritance</title>
+</head>
+<body>
+    <h3>inheritance chai n using __proto__ keyword</h3>
+    <script>
+        let c1 = {
+            c1Title :"react",
+            c1Fee:4578
+        };
+        let c2 = {
+            c2Title : "kranthi",
+            c2Fee: 765,
+            __proto__:c1
+        };
+        let c3 = {
+            c3Title :"kumar",
+            c3Fee:6576,
+            __proto__:c2
+        };
+        let subbu ={
+            name:"umesh",
+            __proto__:c3
+        };
+        document.write(`<h3>${subbu}</h3>`);
+        console.log(`subbu=`,subbu);
+        document.write(`<h3>${subbu.c1Title}</h3>`);
+        document.write(`<h3>${subbu.c1Fee}</h3>`);
+        document.write(`<h3>${subbu.c2Title}</h3>`);
+        document.write(`<h3>${subbu.c2Fee}</h3>`);
+        document.write(`<h3>${subbu.c3Title}</h3>`);
+        document.write(`<h3>${subbu.c3Fee}</h3>`);
+        document.write(`<h3>${subbu.name}</h3>`);
+
+    </script>
+</body>
+</html>

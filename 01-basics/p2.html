@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASICS</title>
+</head>
+<body>
+    <center>
+        <h1>js-variable....!</h1>
+    </center>
+    <hr>
+
+    <pre>
+        DATATYPE
+        1) PRIMITIVE DATA TYPES
+        2) NON-PRIMITIVE/DERIVED DATA TYPES
+        3)PRIMITIVE DATA TYPES
+             -INT(INTEGER)-> IT ACCEPTS ONLY ROUND NUMBERS EX=0-9
+             -FLOAT -> IT ACCEPTS DECIMAL VALUE EX=10.5
+             -boolean -> either true or false
+             -char ->it accepts single characters ex=apple
+             -coid ->returns null VALUE
+        4) non primitive / derived data TYPES
+             -aarray
+             -structure
+             -union
+             -enum
+             -pointer
+             -function
+    </pre>
+    <hr>
+    <script>
+        //var,let and constant are the keywords, is used to declare the  varible to declare  the variable
+        var firstVariable;
+
+        document.write(firstVariable, "<br>");
+        document.write("<b>without value :</b>", firstVariable, "<br>");
+
+        firstVariable = "hello js"
+        document.write("<b>with value : </b>", firstVariable ,"<br>");
+        document.write("<b>with value : </b>" + firstVariable + "<br>");
+        document.write("<b>with value :" +firstVariable+ "</b><br>");
+        document.write("<b>with value :",firstVariable, "</b><br>");
+        document.write(`<b>with value :${firstVariable}</b><br>`);
+        document.write(typeof(firstVariable),"<br><hr>");
+
+        firstVariable = "A"
+        document.write("<b>with value : </b>", firstVariable ,"<br>");
+        document.write("<b>with value : </b>" + firstVariable + "<br>");
+        document.write("<b>with value :" +firstVariable+ "</b><br>");
+        document.write("<b>with value :",firstVariable, "</b><br>");
+        document.write(`<b>with value :${firstVariable}</b><br>`);
+        document.write(typeof(firstVariable),"<br><hr>");
+
+        firstVariable = 1000;
+        document.write("<b>with value : </b>", firstVariable ,"<br>");
+        document.write("<b>with value : </b>" + firstVariable + "<br>");
+        document.write("<b>with value :" +firstVariable+ "</b><br>");
+        document.write("<b>with value :",firstVariable, "</b><br>");
+        document.write(`<b>with value :${firstVariable}</b><br>`);
+        document.write(typeof(firstVariable),"<br><hr>");
+
+        firstVariable = 1000.55555555;
+        document.write("<b>with value : </b>", firstVariable ,"<br>");
+        document.write("<b>with value : </b>" + firstVariable + "<br>");
+        document.write("<b>with value :" +firstVariable+ "</b><br>");
+        document.write("<b>with value :",firstVariable, "</b><br>");
+        document.write(`<b>with value :${firstVariable}</b><br>`);
+        document.write(typeof(firstVariable),"<br><hr>");
+
+        firstVariable = false;
+        document.write("<b>with value : </b>", firstVariable ,"<br>");
+        document.write("<b>with value : </b>" + firstVariable + "<br>");
+        document.write("<b>with value :" +firstVariable+ "</b><br>");
+        document.write("<b>with value :",firstVariable, "</b><br>");
+        document.write(`<b>with value :${firstVariable}</b><br>`);
+        document.write(typeof(firstVariable),"<br><hr>");
+
+        firstVariable = true;
+        document.write("<b>with value : </b>", firstVariable ,"<br>");
+        document.write("<b>with value : </b>" + firstVariable + "<br>");
+        document.write("<b>with value :" +firstVariable+ "</b><br>");
+        document.write("<b>with value :",firstVariable, "</b><br>");
+        document.write(`<b>with value :${firstVariable}</b><br>`);
+        document.write(typeof(firstVariable),"<br><hr>");
+
+
+     /* var is a weaker signal and always have global scope*/
+     /* let and const are block scope variables*/
+
+    </script> 
+</body>
+</html>

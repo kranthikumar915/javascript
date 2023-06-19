@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prototype</title>
+</head>
+<body>
+    <center>
+        <h1>prototype</h1>
+    </center>
+    <hr>
+
+    <script>
+        function Student(){
+            //local property
+            let name,gender;
+            //constructor property
+            this.name = "kranthi";
+            this.gender = "male";
+
+            document.write(name,"<br>");
+            document.write(gender,"<br> <hr>");
+        }
+        
+
+        let stud = new Student(); //ccontsructor object
+        document.write("<b>stud.name:</b>"+stud.name+ "<br><br>");
+        document.write("<b>stud.gender:</b>"+stud.gender+ "<br><br><hr><hr>");
+
+        let stud1 = new Student(); //ccontsructor object
+        document.write("<b>stud.name:</b>"+stud.name+ "<br><br>");
+        document.write("<b>stud.gender:</b>"+stud.gender+ "<br><br>");
+
+        stud.age =20; 
+        document.write("<b>stud.age:</b>"+stud.age+ "<br><br>");
+
+        document.write("<b>stud1.age:</b>"+stud1.age+ "<br><br>");
+
+
+        Student.prototype.age1 = 30;//PROTOTYPE used to add external properties for the function not for the object function
+
+        let student1 = new Student();
+        document.write("<b>student1.name:</b>"+student1.name+ "<br><br>");
+        document.write("<b>student1.gender:</b>"+student1.gender+ "<br><br>");
+        document.write("<b>student1.age1:</b>"+student1.age1+ "<br><br>");
+        document.write("<hr>");
+
+        let student2 = new Student();
+        document.write("<b>student2.name:</b>"+student2.name+ "<br><br>");
+        document.write("<b>student2.gender:</b>"+student2.gender+ "<br><br>");
+        document.write("<b>student2.age1:</b>"+student2.age1+ "<br><br>");
+
+
+    </script>
+
+</body>
+</html>
