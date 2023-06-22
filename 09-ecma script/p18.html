@@ -6,6 +6,42 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>Object.difineroperty</h3>
+        <script>
+            "use strict"; //to enable strict mode
+
+            var user ={}
+            console.log("before=",user);
+
+            Object.defineProperty(user,"name",{
+                value:"naveen",
+                writable:false //throw type error in strict mode
+            });
+            try{
+                user.name = "suma"; //assigment
+
+            }catch(err){
+                console.log(err);
+            }
+            console.log("after=",user);
+
+            /*
+            during assigment of new value to the roperty , the js complier vlidate the varible peoperty
+
+            if vairble is true => re assign the value to the obj property 
+            if writible is false => throws ru time error (in stict mode)
+            */
+        </script>
+    </body>
+</html>
+
 </body>
 </html>

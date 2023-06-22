@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>Deleting properties</h3>
+
+        <script>
+            var x = new Object();
+            x.name = "balu",
+            x.email = "balu@gmail.com",
+            x.age = 23;
+
+            console.log("before delete x=", x);
+
+            delete x.name;
+            delete x.email;
+            delete x.age;
+            //object.setprototypeof(x,{});//cloned object
+
+            console.log("after deletex =",x);
+        </script>
+    </body>
+</html>

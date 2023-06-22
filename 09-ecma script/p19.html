@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>Object.difinepropties</h3>
+
+        <script>
+            "use stict"
+            var user ={};
+
+            Object.defineProperties(user,{
+                "name":{
+                    value :"suma",
+                    writable: true
+                },
+                "email":{
+                    value : "suma@gmail.com",
+                    writable: false
+                },
+                "age":{
+                    value :23,
+                    writable:true
+                }
+            });
+
+            console.log("name",user.name);
+            console.log("email",user.email);
+            console.log("age",user.age);
+
+            try {
+                user.name = "balu",
+                user.email = "bali@gmail.com",
+                user.age ="20";
+
+            }catch(err){
+                console.log(err.message);
+            }
+
+            console.log("name",user.name);
+            console.log("email",user.email);
+            console.log("age",user.age);
+        </script>
+    </body>
+</html>

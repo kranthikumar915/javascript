@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3enuerable >Object.assign</h3enuerable>
+
+        <script>
+            /*
+            this method is used to copy the values of all own property from one or more source of object to target object.
+            object.assign(target,...sources)*/
+            var x ={
+                name : "toyota",
+                Id : "T143g"
+            };
+
+            var y = Object.assign({},x);
+            console.log("y object =",y);
+
+            for (let item in y ){
+                console.log(`${item} : ${y[item]}`);
+            };
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>generator functions</h3>
+    <!--generator fuction wee can call only for pf loop and map constructor-->
+
+    <script>
+        // function* name of the function(generator function)
+        function* users(){
+            yield "kranthi";
+            yield 'krishna';
+            yield 'subbu';
+            yield 'bala';
+            yield 'umesh'
+        }
+        console.log('users()',users());
+
+        for(let item of users()){
+            document.write(`<h3> ${item} </h1>`);
+        }
+    </script>
+</body>
+</html>
