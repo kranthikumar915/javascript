@@ -35,5 +35,40 @@
 <body>
    <h1>posts</h1>
    <section id="posts"></section>
+
+     <script>
+        (function(){
+            fetch(`https://dummyjson.com/posts`,{
+                method:"GET"
+            })
+            .then(res => res.json())
+            .then(res =>{
+                console.log('output=',res)
+                displayOuput(res.posts)
+            }).catch(err => console.log(err.message))
+        })()
+
+        let container = document.querySelector('#posts')
+
+        function displayOuput(posts){
+            console.log('posts =',posts);
+            posts.forEach(item =>{
+                let card = document.createElement('div');
+                let title = document.createElement('h4');
+                let body = document.createElement('p');
+                let tags = document.createElement('strong');
+
+                title.textContent = item.title;
+                body.textContent = item.body;
+                tags.textContent = item.tags;
+
+                card.appendChild(title);
+                card.appendChild(body);
+                card.appendChild(tags);
+
+                container.appendChild(card);
+            });
+        }
+     </script>
 </body>
 </html>
