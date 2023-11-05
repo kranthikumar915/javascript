@@ -73,10 +73,17 @@
             let secondNumber = document.getElementById("secondNumber").value;
             let thirdNumber = document.getElementById("thirdNumber").value;
 
-            if(firstNumber > secondNumber){
+            if(firstNumber > secondNumber && firstNumber > thirdNumber){
                 result.innerHTML = "first number is big" ;
-            } else{
+            } else if(secondNumber > firstNumber && secondNumber > thirdNumber){
                 result.innerHTML = "second number is big";
+            }
+            else if(thirdNumber > firstNumber && thirdNumber > secondNumber){
+                result.innerHTML = "third number is big";
+
+            }else{
+                result.innerHTML = "valid  number is big";
+
             }
         }
         document.getElementById("btn-cnd").onclick = checkCondition;

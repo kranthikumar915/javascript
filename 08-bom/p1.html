@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+    <h1 id='clock'></h1>
+    <script>
+   function add(){
+    let a = 12
+    let b = 13
+    let x =a+b
+    console.log(x)
+    document.getElementById('clock').innerHTML = x
+   }
+ (function(){
+    setInterval(function(){
+    add()
+
+   },1000)
+ })
+    </script>
+</body>
+</html>
